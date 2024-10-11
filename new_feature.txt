@@ -1,0 +1,22 @@
+class PasswordFieldWidget extends StatelessWidget {
+  final TextEditingController controller;
+
+  const PasswordFieldWidget({super.key, required this.controller});
+
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      key: const Key('password'),
+      controller: controller,
+      decoration: const InputDecoration(
+        labelText: 'Contraseña',
+        border: OutlineInputBorder(),
+      ),
+      obscureText: true,
+      // Aquí es donde se introduce el error. En lugar de aceptar el input del usuario, siempre establece una cadena vacía.
+      onChanged: (value) {
+        controller.text = '';  // Error intencionado
+      },
+    );
+  }
+}
