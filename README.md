@@ -6,7 +6,7 @@ Este proyecto consiste en la implementación de pruebas de regresión con la her
 La prueba de regresión ayuda a mantener la estabilidad del software al verificar que el sistema en general aún se comporte correctamente después de cada cambio de código.
 
 
-¿Cómo se realizan las pruebas de humo?  
+¿Cómo se realizan las pruebas de regresión?  
 1. Selección de pruebas de regresión: Elige los casos de prueba que deben volver a probarse, dividiéndolos en reutilizables (funcionalidad crítica, propensos a errores, o que fallaron anteriormente) y obsoletos (ya no relevantes).
 
 2. Determinación del tiempo de ejecución: Estima el tiempo necesario para ejecutar los casos de prueba seleccionados, considerando factores como la creación de datos de prueba y la planificación del equipo.
@@ -15,7 +15,7 @@ La prueba de regresión ayuda a mantener la estabilidad del software al verifica
 
 4. Priorización de los casos de prueba: Ordena los casos de prueba por prioridad:
 
-    -  Prioridad 0: Funcionalidades principales.
+    - Prioridad 0: Funcionalidades principales.
     - Prioridad 1: Funciones esenciales no críticas.
     - Prioridad 2: Casos relacionados con deuda técnica.
 5. Ejecución de los casos de prueba: Ejecuta los casos de prueba manual o automáticamente, verificando si el producto sigue funcionando como se espera.
